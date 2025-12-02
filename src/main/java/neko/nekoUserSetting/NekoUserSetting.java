@@ -4,8 +4,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class NekoUserSetting extends JavaPlugin {
 
-    private TextReplaceListener textReplaceListener;
-
     @Override
     public void onEnable() {
         // Plugin startup logic
