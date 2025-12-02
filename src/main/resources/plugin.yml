@@ -5,3 +5,11 @@ api-version: '1.18'
 depend: [ProtocolLib]
 authors: [ 不穿胖次の小奶猫 ]
 website: https://cnmsb.xin/
+commands:
+  lang:
+    description: Switch language for the plugin
+    usage: /lang <language>
+permissions:
+  neko.usersetting.lang:
+    description: Allow to use lang command
+    default: true

@@ -1,0 +1,8 @@
+#默认语言
+Default: en-us
+
+# 支持的语言
+language:
+  - "zh-cn"
+  - "zh-tw"
+  - "en-us"
