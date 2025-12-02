@@ -11,22 +11,16 @@ public final class NekoUserSetting extends JavaPlugin {
         // Plugin startup logic
         // Check if ProtocolLib is installed
         if (getServer().getPluginManager().getPlugin("ProtocolLib") == null) {
-            getLogger().severe("ProtocolLib not found! This plugin depends on ProtocolLib.");
+            getLogger().severe("ProtocolLib 不存在，请安装ProtocolLib！");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
-        
-        textReplaceListener = new TextReplaceListener(this);
-        textReplaceListener.register();
-        getLogger().info("NekoUserSetting has been enabled! Text replacement is active.");
+        getLogger().info("NekoUserSetting 启动");
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        if (textReplaceListener != null) {
-            textReplaceListener.unregister();
-        }
-        getLogger().info("NekoUserSetting has been disabled!");
+        getLogger().info("NekoUserSetting 已卸载");
     }
 }
